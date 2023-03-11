@@ -29,4 +29,10 @@ func main() {
 
 	value4, ok := m["Martin"]
 	fmt.Println(value4, ok)
+
+	//w := make(map[int][]string)
+	w := make(map[int]string)
+	m[2020] = "fabio"
+	fmt.Println(w)
+
 }

@@ -30,4 +30,12 @@ func main() {
 	for i := 10; i > 0; i-- {
 		fmt.Println(i)
 	}
+	fmt.Println("///")
+	fmt.Printf("2, %T", 2)
+	fmt.Println("///")
+
+	a := 10
+	b := &a
+	c := *b
+	println(a, b, c)
 }
