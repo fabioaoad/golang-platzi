@@ -13,7 +13,7 @@ func CheckAuth() Middleware {
 			flag := true //cambiar de true a false para el pasar el middleware
 			fmt.Println("Checking Authentication")
 			if flag {
-				f(w, r)
+				f(w, r) //voy al siguiente middleware (como una cadena se van llamando)
 			} else {
 				return
 			}
