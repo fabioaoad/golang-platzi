@@ -1,0 +1,25 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	x := 5
+	//funcion anonima
+	y := func() int {
+		return x * 2
+	}()
+	fmt.Println(y)
+
+	c := make(chan int)
+	go func() {
+		fmt.Println("Iniciando Función")
+		time.Sleep(5 * time.Second)
+		fmt.Println("Fin")
+		c <- 1
+	}()
+	<-c
+
+}
